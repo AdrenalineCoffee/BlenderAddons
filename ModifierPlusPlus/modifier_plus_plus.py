@@ -1,16 +1,19 @@
+
 bl_info = {
-    "name": "Modifier++",
+    "name": "gopa",
     "author": "Evgenii Trunin",
-    "version": (1, 0),
+    "blender": (2, 91, 0),
+    "category": "Object",
+}
+
+"""version": (1, 0),
     "blender": (2, 91, 0),
     "location": "View 3D > Modifier > Tools",
     "description": "Allows you to add active object modifiers to selected objects without replacing them. Also, all existing modifiers for objects will be preserved.",
     "warning": "",
-    "doc_url": "",
-    "tracker_url": "",
-    "category": "",
-}
-
+    "doc_url": "https://github.com/AdrenalineCoffee/BlenderAddons/tree/main/Modifier%2B%2B",
+    "tracker_url": "https://github.com/AdrenalineCoffee/BlenderAddons/issues",
+    """
 from collections import defaultdict
 import bpy
 import bmesh
@@ -20,7 +23,7 @@ from bpy.props import BoolProperty
 class SharpEdgesFromUvIslands(Operator):
     bl_idname = "object.sharp_edges_from_uv"
     bl_label = "Sharp Edges From UV Islands"
-    bl_description = ""
+    bl_description = "Add sharp edges on seams"
     
     use_existing_seams: BoolProperty(
         name="Use existing seams",
