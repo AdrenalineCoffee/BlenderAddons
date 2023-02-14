@@ -1,19 +1,18 @@
 
 bl_info = {
-    "name": "gopa",
+    "name": "Modifier++",
     "author": "Evgenii Trunin",
     "blender": (2, 91, 0),
-    "category": "Object",
-}
-
-"""version": (1, 0),
+    "version": (1, 0),
     "blender": (2, 91, 0),
     "location": "View 3D > Modifier > Tools",
     "description": "Allows you to add active object modifiers to selected objects without replacing them. Also, all existing modifiers for objects will be preserved.",
     "warning": "",
     "doc_url": "https://github.com/AdrenalineCoffee/BlenderAddons/tree/main/Modifier%2B%2B",
     "tracker_url": "https://github.com/AdrenalineCoffee/BlenderAddons/issues",
-    """
+    "category": "Object",
+}
+
 from collections import defaultdict
 import bpy
 import bmesh
