@@ -1,1 +1,1 @@
-https://github.com/AdrenalineCoffee/BlenderAddons.wiki.git
+https://github.com/AdrenalineCoffee/BlenderAddons/wiki/Modifier
