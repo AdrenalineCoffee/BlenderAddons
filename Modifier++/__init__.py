@@ -8,7 +8,7 @@ bl_info = {
     "location": "View 3D > Modifier > Tools",
     "description": "Allows you to add active object modifiers to selected objects without replacing them. Also, all existing modifiers for objects will be preserved.",
     "warning": "",
-    "doc_url": "https://github.com/AdrenalineCoffee/BlenderAddons/tree/main/Modifier%2B%2B",
+    "doc_url": "https://github.com/AdrenalineCoffee/BlenderAddons/wiki/Modifier",
     "tracker_url": "https://github.com/AdrenalineCoffee/BlenderAddons/issues",
     "category": "Object",
 }

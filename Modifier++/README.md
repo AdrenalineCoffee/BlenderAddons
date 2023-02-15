@@ -1,4 +1,1 @@
-Данный плагин добавляет функционал копирования модификаторов на все объекты, не заменяя остальные плагины
-Compatible with Blender 2.91 or higher.
-
-Main Features:
+https://github.com/AdrenalineCoffee/BlenderAddons.wiki.git
