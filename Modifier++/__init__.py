@@ -26,7 +26,7 @@ class SharpEdgesFromUvIslands(Operator):
     
     use_existing_seams: BoolProperty(
         name="Use existing seams",
-        default=False,
+        default = False,
     )
     
     @classmethod
