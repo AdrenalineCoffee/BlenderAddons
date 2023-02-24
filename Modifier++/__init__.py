@@ -200,19 +200,18 @@ def register():
 
     # check if addon is enabled
     if 'space_view3d_modifier_tools' in bpy.context.preferences.addons.keys(): 
-
         # get panel
         panel_class = eval("bpy.types.DATA_PT_modifiers")
-        
         # check if 'extended_menu' already in draw_funcs to prevent double entries
         if not [f for f in panel_class.draw._draw_funcs if f.__name__ == 'extended_menu']:
-
+            #print("No load menu")
             # add extended menu first (with registered original ops)  
             panel_class.prepend(extended_menu)                                            
             # remove original menu 
             old_menu = [f for f in bpy.types.DATA_PT_modifiers.draw._draw_funcs if f.__name__ == 'menu'][0]
             panel_class.draw._draw_funcs.remove(old_menu)
-        
+    else: bpy.types.DATA_PT_modifiers.prepend(extended_menu)
+
 def unregister():
     for cl in reversed(classes):
         bpy.utils.register_class(cl)
